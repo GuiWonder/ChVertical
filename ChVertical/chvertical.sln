@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chverticalForm", "chverticalForm\chverticalForm.csproj", "{A298947D-3A7E-4578-84F0-CB3373B5CE9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChVerticalWpf", "ChVerticalWpf\ChVerticalWpf.csproj", "{31EC094B-DFA3-49C7-9871-CEDE4C09FA9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A298947D-3A7E-4578-84F0-CB3373B5CE9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A298947D-3A7E-4578-84F0-CB3373B5CE9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A298947D-3A7E-4578-84F0-CB3373B5CE9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A298947D-3A7E-4578-84F0-CB3373B5CE9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EC094B-DFA3-49C7-9871-CEDE4C09FA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EC094B-DFA3-49C7-9871-CEDE4C09FA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EC094B-DFA3-49C7-9871-CEDE4C09FA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EC094B-DFA3-49C7-9871-CEDE4C09FA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC2CA5AC-3487-4045-A570-95B2832B0B9E}
+	EndGlobalSection
+EndGlobal

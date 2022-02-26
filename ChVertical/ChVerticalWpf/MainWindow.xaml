@@ -1,0 +1,54 @@
+﻿<Window x:Class="ChVerticalWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChVerticalWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="577">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="textBoxIn" TextWrapping="Wrap" Text="" Margin="0,0,0,29" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
+        <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
+        <TextBox x:Name="TextBoxOut" Margin="0,5,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" AcceptsTab="True" AcceptsReturn="True" FontFamily="SimSun"/>
+        <Grid Height="29" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="550"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="每页列数" HorizontalAlignment="Left" Margin="4,0,0,3" Height="25" VerticalAlignment="Bottom" Grid.Column="1"/>
+            <Label Content="每列字数" HorizontalAlignment="Left" Margin="124,0,0,2" Height="25" VerticalAlignment="Bottom" Grid.Column="1"/>
+            <ComboBox x:Name="ComboBoxStyle" HorizontalAlignment="Left" Margin="239,0,0,5" VerticalAlignment="Bottom" Width="103" SelectedIndex="0" Grid.Column="1" >
+                <ComboBoxItem Content="粗实线+细实" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="双实线+细实" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="细实线+细虚" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="蝌蚪往回游" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="一切向上看" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="清风竹节型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="密码错乱型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="红星闪闪型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="霓虹灯闪烁" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="我心依旧型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="大圈套小圈" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="鱼儿水中游" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="阿米佗佛型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="清爽空白型" HorizontalAlignment="Left" />
+            </ComboBox>
+            <CheckBox x:Name="CheckBoxTc" Content="转为繁体" HorizontalAlignment="Left" Margin="347,0,0,6" VerticalAlignment="Bottom" Grid.Column="1"/>
+            <TextBox x:Name="textBoxColumn" HorizontalAlignment="Left" Height="20" Margin="67,0,0,4" TextWrapping="Wrap" Text="10" VerticalAlignment="Bottom" Width="52" Grid.Column="1"/>
+            <TextBox x:Name="textBoxRow" HorizontalAlignment="Left" Height="20" Margin="182,0,0,4" TextWrapping="Wrap" Text="10" VerticalAlignment="Bottom" Width="52" Grid.Column="1"/>
+            <Button x:Name="ButtonStart" Content="开始" HorizontalAlignment="Left" Margin="427,0,0,5" VerticalAlignment="Bottom" Grid.Column="1" />
+            <Button x:Name="ButtonCopy" Content="拷贝结果" HorizontalAlignment="Left" Margin="460,0,0,5" VerticalAlignment="Bottom" Grid.Column="1" />
+            <Button x:Name="ButtonFont" Content="字体" HorizontalAlignment="Left" Margin="517,0,0,5" VerticalAlignment="Bottom" RenderTransformOrigin="2.429,0.421" Grid.Column="1" />
+
+        </Grid>
+
+
+    </Grid>
+</Window>
