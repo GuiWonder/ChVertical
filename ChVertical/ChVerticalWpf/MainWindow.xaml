@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChVerticalWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="577">
+        Title="MainWindow" Height="650" Width="580">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -19,33 +19,40 @@
         <Grid Height="29" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="550"/>
+                <ColumnDefinition Width="540"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="每页列数" HorizontalAlignment="Left" Margin="4,0,0,3" Height="25" VerticalAlignment="Bottom" Grid.Column="1"/>
-            <Label Content="每列字数" HorizontalAlignment="Left" Margin="124,0,0,2" Height="25" VerticalAlignment="Bottom" Grid.Column="1"/>
-            <ComboBox x:Name="ComboBoxStyle" HorizontalAlignment="Left" Margin="239,0,0,5" VerticalAlignment="Bottom" Width="103" SelectedIndex="0" Grid.Column="1" >
-                <ComboBoxItem Content="粗实线+细实" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="双实线+细实" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="细实线+细虚" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="蝌蚪往回游" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="一切向上看" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="清风竹节型" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="密码错乱型" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="红星闪闪型" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="霓虹灯闪烁" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="我心依旧型" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="大圈套小圈" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="鱼儿水中游" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="阿米佗佛型" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="清爽空白型" HorizontalAlignment="Left" />
+            <Label Content="每页列数" HorizontalAlignment="Left" Margin="0,0,0,0" Height="25" VerticalAlignment="Center" Grid.Column="1"/>
+            <Label Content="每列字数" HorizontalAlignment="Left" Margin="116,0,0,0" Height="25" VerticalAlignment="Center" Grid.Column="1"/>
+            <ComboBox x:Name="ComboBoxStyle" HorizontalAlignment="Left" Margin="230,0,0,0" VerticalAlignment="Center" Width="104" SelectedIndex="0" Grid.Column="1" >
+                <ComboBoxItem Content="粗实线与细实" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="双实线与细实" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="双实线与细虚" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="细实线" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="细实线与细虚" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="向下箭头" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="向上箭头" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="竹节型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="错乱型" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="五角星" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="霓虹灯" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="首尾三角" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="大小圆圈" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="首尾波浪线" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="卐字边" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="空白填充" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="上下空白" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="竖线格子" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="无线框" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="完全空白" HorizontalAlignment="Left" />
             </ComboBox>
-            <CheckBox x:Name="CheckBoxTc" Content="转为繁体" HorizontalAlignment="Left" Margin="347,0,0,6" VerticalAlignment="Bottom" Grid.Column="1"/>
-            <TextBox x:Name="textBoxColumn" HorizontalAlignment="Left" Height="20" Margin="67,0,0,4" TextWrapping="Wrap" Text="10" VerticalAlignment="Bottom" Width="52" Grid.Column="1"/>
-            <TextBox x:Name="textBoxRow" HorizontalAlignment="Left" Height="20" Margin="182,0,0,4" TextWrapping="Wrap" Text="10" VerticalAlignment="Bottom" Width="52" Grid.Column="1"/>
-            <Button x:Name="ButtonStart" Content="开始" HorizontalAlignment="Left" Margin="427,0,0,5" VerticalAlignment="Bottom" Grid.Column="1" />
-            <Button x:Name="ButtonCopy" Content="拷贝结果" HorizontalAlignment="Left" Margin="460,0,0,5" VerticalAlignment="Bottom" Grid.Column="1" />
-            <Button x:Name="ButtonFont" Content="字体" HorizontalAlignment="Left" Margin="517,0,0,5" VerticalAlignment="Bottom" RenderTransformOrigin="2.429,0.421" Grid.Column="1" />
+            <CheckBox x:Name="CheckBoxTc" Content="转为繁体" HorizontalAlignment="Left" Margin="340,0,0,0" VerticalAlignment="Center" Grid.Column="1"/>
+            <TextBox x:Name="textBoxRow" HorizontalAlignment="Left" Height="20" Margin="58,0,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Center" Width="50" Grid.Column="1"/>
+            <TextBox x:Name="textBoxColumn" HorizontalAlignment="Left" Height="20" Margin="174,0,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Center" Width="50" Grid.Column="1"/>
+            <Button x:Name="ButtonStart" Content="开始" HorizontalAlignment="Left" Margin="412,0,0,0" VerticalAlignment="Center" Grid.Column="1" />
+            <Button x:Name="ButtonCopy" Content="拷贝结果" HorizontalAlignment="Left" Margin="446,0,0,0" VerticalAlignment="Center" Grid.Column="1" />
+            <Button x:Name="ButtonFont" Content="字体" HorizontalAlignment="Left" Margin="502,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="2.429,0.421" Grid.Column="1" />
+            <!--<Button x:Name="ButtonFontFile" Content="本地字体" HorizontalAlignment="Left" Margin="542,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="2.429,0.421" Grid.Column="1" />-->
 
         </Grid>
 
